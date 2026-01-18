@@ -1,0 +1,19 @@
+<script>
+  const form = document.getElementById("commentForm");
+  const container = document.getElementById("commentsContainer");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const comment = document.getElementById("comment").value;
+
+    const bubble = document.createElement("div");
+    bubble.className = "comment-bubble";
+    bubble.textContent = `💬 ${name} : ${comment}`;
+
+    container.prepend(bubble);
+
+    form.reset();
+  });
+</script>
