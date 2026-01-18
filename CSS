@@ -1,0 +1,53 @@
+.comments-section {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.comments-section h2 {
+  margin-bottom: 20px;
+}
+
+#commentForm {
+  max-width: 500px;
+  margin: 0 auto 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#commentForm input,
+#commentForm textarea {
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-family: inherit;
+}
+
+#commentForm button {
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#commentForm button:hover {
+  opacity: 0.9;
+}
+
+.comments-bubbles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.comment-bubble {
+  background: #f3f3ff;
+  padding: 14px 18px;
+  border-radius: 999px;
+  font-size: 14px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
